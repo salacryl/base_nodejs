@@ -1,6 +1,6 @@
 FROM node:10
 
-ENV PORT 5000
+ARG PORT=5000
 
 # Create app directory
 WORKDIR /usr/src/app
