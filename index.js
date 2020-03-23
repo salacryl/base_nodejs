@@ -17,6 +17,7 @@ const logger = createLogger({
 
 // Get Port
 const PORT = process.env.PORT || 5000;
+const ENV = process.env.APP_ENV || "dev";
 
 
 // init App
@@ -48,10 +49,13 @@ const test = () => 0
 
 
 // init browser-sync
-const bs = browserSync.create();
-bs.init({
+logger.log("info", 'ENV ist: %s', ENV);
+if (ENV==="dev"){
+  const bs = browserSync.create();
+  bs.init({
     port: PORT+1,
     proxy: {
     target: "localhost:" + PORT,
+  }
+  });
 }
-});
