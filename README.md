@@ -1,3 +1,3 @@
-# base_nodejs_bootstrap
+# base_nodejs
 A start project with nodejs and bootstrap
 test
