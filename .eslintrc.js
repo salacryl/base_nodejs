@@ -24,6 +24,7 @@ module.exports = {
 		"no-console": "off",
 		"prefer-arrow-callback": "error",
 		"func-style": ["error", "expression"],
+    "no-console": "off",
 		"camelcase": ["error", { "properties":"always" }],
 		"require-jsdoc": ["error", {
 			"require": {
