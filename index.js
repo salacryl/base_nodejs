@@ -53,7 +53,7 @@ app.listen(PORT, () => logger.log("info", "Webservice startet on Port: %d", PORT
 const testIt = () => 0;
 testIt();
 
-function test (bla, hello)
+function test (bla, hello, mu)
 {}
 
 
