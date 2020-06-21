@@ -1,5 +1,6 @@
 /* global __dirname */
 /* global process */
+/* global console */
 
 import express from "express";
 import  { createLogger, format, transports, } from "winston";
@@ -59,8 +60,8 @@ testIt();
 const noRules = () =>{
 	return false;
 };
-noRules();
-
+let bool=noRules();
+console.log(bool);
 // init browser-sync
 logger.log("info", "ENV ist: %s", ENV);
 if (ENV==="dev"){
