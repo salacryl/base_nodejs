@@ -1,6 +1,5 @@
 /* global __dirname */
 /* global process */
-/* global console */
 
 import express from "express";
 import  { createLogger, format, transports, } from "winston";
@@ -54,14 +53,6 @@ app.listen(PORT, () => logger.log("info", "Webservice startet on Port: %d", PORT
 const testIt = () => 0;
 testIt();
 
-/** Test doku automation
- * @returns {int} 0 
-*/
-const noRules = () =>{
-	return false;
-};
-let bool=noRules();
-console.log(bool);
 // init browser-sync
 logger.log("info", "ENV ist: %s", ENV);
 if (ENV==="dev"){
