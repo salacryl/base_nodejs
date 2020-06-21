@@ -53,7 +53,9 @@ app.listen(PORT, () => logger.log("info", "Webservice startet on Port: %d", PORT
 const testIt = () => 0;
 testIt();
 
-
+function noRules(){
+	return false;
+}
 
 // init browser-sync
 logger.log("info", "ENV ist: %s", ENV);
