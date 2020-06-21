@@ -59,6 +59,10 @@ testIt();
 const testIt2 = () => 0;
 testIt2();
 
+function bla(){
+	return false;
+}
+
 // init browser-sync
 logger.log("info", "ENV ist: %s", ENV);
 if (ENV==="dev"){
