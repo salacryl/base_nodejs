@@ -42,7 +42,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 // default route 
 app.get("/", (req, res) => {
-	res.render("homepage", {greeting: "Salacryl's starting project",});
+	res.render("homepage", {greeting: "Hallo Meeting Group",});
 });
 
 app.listen(PORT, () => logger.log("info", "Webservice startet on Port: %d", PORT));
@@ -52,10 +52,6 @@ app.listen(PORT, () => logger.log("info", "Webservice startet on Port: %d", PORT
 */
 const testIt = () => 0;
 testIt();
-
-function noRules(){
-	return false;
-}
 
 // init browser-sync
 logger.log("info", "ENV ist: %s", ENV);
