@@ -53,6 +53,12 @@ app.listen(PORT, () => logger.log("info", "Webservice startet on Port: %d", PORT
 const testIt = () => 0;
 testIt();
 
+/** Test doku automation
+ * @returns {int} 0 
+*/
+const testIt2 = () => 0;
+testIt2();
+
 // init browser-sync
 logger.log("info", "ENV ist: %s", ENV);
 if (ENV==="dev"){
