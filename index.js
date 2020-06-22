@@ -42,7 +42,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 // default route 
 app.get("/", (req, res) => {
-	res.render("homepage", {greeting: "Salacryl's starting project",});
+	res.render("homepage", {greeting: "Hello",});
 });
 
 app.listen(PORT, () => logger.log("info", "Webservice startet on Port: %d", PORT));
